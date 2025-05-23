@@ -1,0 +1,152 @@
+<!--
+
+HOME: 
+    - Banner image (slightly transparent)
+    - Some paragraphs
+    - Dynamic greeting
+
+BLOG:
+    - Lots of entries with both text and images
+    - Have hidden entries that you need a code for
+
+ABOUT THE AUTHOR:
+    - Accordion menu for different categories
+
+OTHER JS IDEAS:
+    - Color changing button
+    - Image toggle on/off
+
+-->
+
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+    html {
+        font-size: 10px;
+        font-family: 'Montserrat';
+        background-color: rgb(62, 37, 54);
+    }
+
+    body {
+        margin: 0;
+    }
+
+    #header {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 55%;
+        font-size: 3rem;
+        color: rgb(52, 34, 46);
+        flex-direction: column;
+        gap: 0.8em;
+        background-image: url("https://www.awalkandalark.com/13-super-fluffy-blossoms/");
+        background-size: cover;
+        border-radius: 0 0 1.2em 1.2em;
+        margin-bottom: 0.8em;
+    }
+
+    #header input {
+        border-radius: 0.5em;
+        padding: 0.6em;
+        font-size: 1.7rem;
+        width: 40%;
+        border: 2px solid rgb(196, 95, 140);
+        box-shadow: 0 0 70px rgb(255, 111, 169);
+        font-family: 'Montserrat';
+    }
+    
+    #save-name {
+        background-color: rgb(196, 95, 140);
+        border-radius: 0.5em;
+        font-size: 2rem;
+        height: 97%;
+        border: 2px solid rgb(196, 95, 140);
+        width: 15%;
+        font-family: 'Montserrat';
+        font-weight: 600;
+        color: white;
+    }
+
+    #intro {
+        padding: 1.5rem;
+        font-size: 2rem;
+        color: white;
+    }
+
+    .navbar {
+        background-color: rgb(62, 37, 54);
+        padding: 10px 0;
+        display: flex;
+        justify-content: center;
+    }
+
+    .nav-links {
+        list-style: none;
+        display: flex;
+        gap: 20px;
+        padding: 0;
+    }
+
+    .nav-links li a {
+        text-decoration: none;
+        color: white;
+        font-size: 1.7rem;
+        padding: 10px 20px;
+        transition: 0.3s;
+    }
+
+    .nav-links li a:hover {
+        background-color: rgb(52, 34, 46);
+        border-radius: 5px;
+    }
+    
+</style>
+
+<body>
+    <nav class="navbar">
+        <ul class="nav-links">
+            <li style="text-decoration: underline dotted rgb(124, 89, 112) 0.5em;"><a href="index.html">Home</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="about.html">About the Author</a></li>
+        </ul>
+    </nav>
+
+    <div id="header">
+        <h1>Welcome <span id="username">________</span>!</h1>
+        <span style="width: 90%; text-align: center; margin-bottom: 2em;">
+            <input id="greeter" type="text" placeholder="Enter name here">
+            <button id="save-name" onclick="saveName()">Save</button>
+        </span>
+    </div>
+    
+    
+    <div id="intro">
+        <h2 style="text-align: center;">Summer Diary</h2>
+
+        <p>
+            Hey everyone! Welcome to my summer diary website—where I’ll be documenting all the fun, weird, and 
+            exciting things that happen over the next couple of months. I got this idea after realizing that 
+            summer always flies by, and I barely remember half of what I did by the time school starts again. 
+            So, instead of letting my adventures slip away, I’m going to write them down, snap pictures, and 
+            share the ups and downs of summer break in real time! Maybe someday I’ll look back and laugh at all 
+            the silly moments (or cringe at them—who knows?).
+        </p>
+
+        <p>
+            This summer, I have a pretty solid mix of plans: some days will be full of sun, swimming, and ice 
+            cream, while others might be spent indoors binge-watching movies or finally picking up a new hobby 
+            (maybe skateboarding?). I’m hoping to go on a few trips with my family, spend more time outside, 
+            and challenge myself to try new things. Oh, and I’ve got a reading list to tackle too—because even 
+            though school is out, I still love getting lost in a good book.
+        </p>
+            
+        <p>
+            I’ll be updating this site regularly with blog posts, photos, and maybe even a few fun videos if I 
+            get brave enough to record them. It’ll be messy, honest, and totally my own space to capture everything 
+            as it happens. If you want to follow along, welcome! Let’s make this summer one to remember. ☀️
+        </p>
+    </div>
+
+    <script src="index.js"></script>
+</body>

@@ -1,0 +1,295 @@
+<!--
+
+HOME: 
+    - Banner image (slightly transparent)
+    - Some paragraphs
+    - Dynamic greeting
+
+BLOG:
+    - Lots of entries with both text and images
+    - Have hidden entries that you need a code for
+
+ABOUT THE AUTHOR:
+    - Accordion menu for different categories
+
+OTHER JS IDEAS:
+    - Color changing button
+    - Image toggle on/off
+
+-->
+<head>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+        html {
+            font-size: 10px;
+            font-family: 'Montserrat';
+            background-color: rgb(174, 161, 170);
+        }
+
+        body {
+            margin: 0;
+        }
+
+        .navbar {
+            background-color: rgb(62, 37, 54);
+            padding: 10px 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        .nav-links {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+            padding: 0;
+        }
+
+        .nav-links li a {
+            text-decoration: none;
+            color: white;
+            font-size: 1.7rem;
+            padding: 10px 20px;
+            transition: 0.3s;
+        }
+
+        .nav-links li a:hover {
+            background-color: rgb(52, 34, 46);
+            border-radius: 5px;
+        }
+
+        .title {
+            text-align: center;
+            font-size: 3rem;
+            color: rgb(52, 34, 46);
+        }
+
+        .blog-entry {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 2em;
+            font-size: 2rem;
+            padding-right: 2%;
+            margin-bottom: 2em;
+        }
+
+        .blog-entry img {
+            width: 30%;
+            height: 20%;
+            border-radius: 0 1.5em 1.5em 0;
+        }
+
+        .hidden {
+            display: none;
+        }
+
+        #enter-password {
+            font-size: 2.5rem;
+            font-weight: 700;
+            text-align: center;
+            margin: 2em;
+        }
+
+        #enter-password input {
+            font-size: 3.5rem;
+            border-radius: 0.5em;
+            border: 0;
+            padding: 0.3em;
+            width: 40%;
+        }
+
+        #enter-password button {
+            font-size: 2.3rem;
+            padding: 0.3em;
+            border-radius: 0.5em;
+            width: 7%;
+            border: 0;
+            font-family: 'Montserrat';
+            background-color: rgb(62, 37, 54);
+            color: white;
+        }
+
+        #enter-password button:hover {
+            background-color: rgb(99, 69, 89);
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar">
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li style="text-decoration: underline dotted rgb(124, 89, 112) 0.5em;"><a href="blog.html">Blog</a></li>
+            <li><a href="about.html">About the Author</a></li>
+        </ul>
+    </nav>
+
+    <h2 class="title">Blog</h2>
+
+    <div class="blog-entry">
+        <img src="https://www.nomadswithapurpose.com/wp-content/uploads/2017/09/Bench-Lakes-blog-2.jpg.webp">
+        <div>
+            <h4>June 15, 2025 – Summer Begins!</h4>
+            <p>
+                Summer has officially started, and I’m beyond excited! No more alarms,
+                no more homework—just weeks of freedom and fun. I kicked off the day 
+                with my usual ritual: waking up late and eating a ridiculously large 
+                breakfast (pancakes and strawberries, in case you were wondering).
+            </p>
+
+            <p>
+                I spent the afternoon brainstorming what I want to do this summer. My 
+                list is already longer than I can probably manage—learning to skateboard, 
+                going on hikes, testing new ice cream flavors, and maybe even starting a 
+                YouTube channel? Who knows. For now, I’m just enjoying the feeling of 
+                summer stretching out in front of me.
+            </p>
+
+            <p>
+                Tonight, my family and I are going for a sunset walk around the lake, 
+                and I can’t wait. There’s something about warm summer nights that makes
+                everything feel magical. Here’s to a summer full of adventures!
+            </p>
+        </div>
+    </div>
+
+    <div class="blog-entry">
+        <img src="https://www.alltrails.com/_next/image?url=https%3A%2F%2Fimages.alltrails.com%2FeyJidWNrZXQiOiJhc3NldHMuYWxsdHJhaWxzLmNvbSIsImtleSI6InVwbG9hZHMvcGhvdG8vaW1hZ2UvNjE1NDI2NzkvMjAxNzcwZmIyYTk0NzNlZThlNjZmNjBlM2U1NmRmZTQuanBnIiwiZWRpdHMiOnsidG9Gb3JtYXQiOiJ3ZWJwIiwicmVzaXplIjp7IndpZHRoIjoxMDgwLCJoZWlnaHQiOjcwMCwiZml0IjoiY292ZXIifSwicm90YXRlIjpudWxsLCJqcGVnIjp7InRyZWxsaXNRdWFudGlzYXRpb24iOnRydWUsIm92ZXJzaG9vdERlcmluZ2luZyI6dHJ1ZSwib3B0aW1pc2VTY2FucyI6dHJ1ZSwicXVhbnRpc2F0aW9uVGFibGUiOjN9fX0%3D&w=3840&q=90">
+        <div>
+            <h4>June 28, 2025 – First Big Adventure!</h4>
+            <p>
+                I finally checked off my first summer adventure: hiking to the top of 
+                Eagle Rock! It was way harder than I expected, but totally worth it. 
+                The view at the top was breathtaking—rolling green hills, a sparkling 
+                river, and nothing but sky all around.
+            </p>
+
+            <p>
+                My legs were basically jelly by the time I reached the summit, but 
+                I felt so proud of myself. My friends and I had packed sandwiches, and 
+                let me just say, food tastes ten times better when you’ve earned it. 
+                We sat there for an hour, just enjoying the view and joking around.
+            </p>
+
+            <p>
+                On the way down, we found a hidden waterfall! It was freezing, but 
+                that didn’t stop us from splashing around. I’ll definitely be sore 
+                tomorrow, but this was exactly the kind of adventure I wanted for my summer.
+            </p>
+        </div>
+    </div>
+
+    <div class="blog-entry">
+        <img src="https://i.pinimg.com/736x/b7/f8/46/b7f846a0b638a46b100ca4a2e7c37c69.jpg">
+        <div>
+            <h4>July 10, 2025 – Rainy Day Fun</h4>
+            <p>
+                The weather took a turn today, and instead of sunshine, we got 
+                endless rain. Normally, I’d be bummed, but honestly, it was kind 
+                of nice. I spent the day curled up with a book, drinking hot cocoa 
+                (yes, in July!), and listening to the sound of the rain hitting 
+                the windows.
+            </p>
+
+            <p>
+                Since going outside was a no-go, I finally started working on my 
+                summer scrapbook. I’ve collected little things from the past few 
+                weeks—ticket stubs, pressed flowers, and a million photos—and now 
+                it’s all coming together into something really cool.
+            </p>
+
+            <p>
+                Even though I didn’t go anywhere today, I realized that summer 
+                isn’t just about big adventures. It’s also about slowing down 
+                and appreciating the little things.
+            </p>
+        </div>
+    </div>
+
+    <div class="blog-entry">
+        <img src="https://alpha.creativecirclecdn.com/bristowbeat/original/20230206-104734-Screen%20Shot%202023-02-06%20at%2010.42.14%20AM.png.jpg">
+        <div>
+            <h4>July 22, 2025 – Ice Cream Taste Test!</h4>
+            <p>
+                Today was officially Ice Cream Challenge Day, and it was AMAZING. 
+                My best friend and I decided to test the weirdest flavors we could 
+                find. We hit three different ice cream shops, trying everything 
+                from lavender honey to spicy mango.
+            </p>
+
+            <p>
+                Some flavors were incredible—like the toasted marshmallow one 
+                that tasted exactly like a campfire. Others… not so much. Let’s 
+                just say pickle ice cream should not exist. Who even thought that 
+                was a good idea?!
+            </p>
+
+            <p>
+                By the end of the day, I was completely stuffed but ridiculously 
+                happy. I think my favorite part was laughing so hard we couldn’t 
+                breathe every time we tried a terrible flavor. 10/10, would do again!
+            </p>
+        </div>
+    </div>
+
+    <div id="enter-password">
+        <p>Enter password to see secret entries:</p>
+        <span style="display: flex; gap: 1em; justify-content: center;">
+            <input type="password" id="password">
+            <button onclick="validatePass(this)">Go</button>
+        </span>
+        <p id="message"></p>
+    </div>
+
+    <div class="blog-entry hidden">
+        <img src="https://i.pinimg.com/736x/21/86/bd/2186bd08ee48bac06ddaddca08c1c3ef.jpg">
+        <div>
+            <h4>August 5, 2025 – Backyard Camping!</h4>
+            <p>
+                Since we couldn’t go on an actual camping trip, my friends and I 
+                decided to set up camp in my backyard. We pitched a tent, made a 
+                fire (well, a fire pit), and even attempted roasting marshmallows 
+                over candles when the fire kept going out.
+            </p>
+
+            <p>
+                We spent hours telling ghost stories, playing card games, and staring 
+                up at the stars. The best part? Falling asleep to the sound of 
+                crickets and waking up when the sun started peeking through the tent.
+            </p>
+
+            <p>
+                It might not have been real camping, but honestly? It felt just as 
+                magical. Maybe next time, we’ll actually make it to the woods!
+            </p>
+        </div>
+    </div>
+
+    <div class="blog-entry hidden">
+        <img src="https://www.nomadswithapurpose.com/wp-content/uploads/2024/04/best-hikes-sawtooths.jpeg.webp">
+        <div>
+            <h4>August 21, 2025 – The Final Days of Summer</h4>
+            <p>
+                How is summer almost over already? It feels like just yesterday 
+                I was making my summer bucket list, and now I’m trying to check 
+                off the last few things before school starts again.
+            </p>
+
+            <p>
+                I spent today biking around the neighborhood, taking in the last 
+                golden afternoons of freedom. My friends and I stopped by our 
+                favorite park, and we just sat there, reminiscing about all the 
+                best moments from the past two months.
+            </p>
+
+            <p>
+                This summer has been everything I wanted it to be—adventurous, 
+                relaxing, chaotic, and fun. I’m definitely sad it’s ending, but 
+                I know I’ll carry these memories with me into the new school year.
+            </p>
+        </div>
+    </div>
+
+    <script src="blog.js"></script>
+</body>
