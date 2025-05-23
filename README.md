@@ -1,0 +1,1 @@
+This is a summer blog made by Cindy Cui in the Summer of 2025. 
